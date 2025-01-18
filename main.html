@@ -1,0 +1,169 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<script src="./script.js"></script>
+<style>
+.style1 {
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+}
+.style2 {
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.style3 {
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+}
+#box1 {
+    padding: 1rem; 
+    box-sizing: border-box; 
+    border: 2px solid rgb(0, 0, 0); 
+    text-align: center; 
+    color: rgb(40, 40, 40);
+    border-radius: 25px;
+    background-color: rgba(120, 119, 119, 0.409);
+}
+.centerdiv {
+    display: flex;
+    justify-content: center;
+}
+#box2 {
+    padding: 1rem; 
+    box-sizing: border-box; 
+    border: 2px solid rgb(0, 0, 0); 
+    text-align: center;
+    color: rgb(215, 215, 215);
+    width: 900;
+    background-color: rgba(120, 119, 119, 0.409);
+}
+.darkenbox {
+    width: 300;
+    padding: 1rem; 
+    box-sizing: border-box; 
+    border: 2px solid rgb(0, 0, 0); 
+    text-align: center; 
+    color: rgb(40, 40, 40);
+    background-color: rgba(23, 23, 23, 0.409);
+    color: white;
+}
+.darkenboxCred {
+    width: 500;
+    padding: 1rem; 
+    box-sizing: border-box; 
+    border: 2px solid rgb(0, 0, 0); 
+    text-align: center; 
+    color: rgb(40, 40, 40);
+    background-color: rgba(23, 23, 23, 0.409);
+    color: white;
+}
+.dropdowninfo {
+    width: 500;
+    height: 10;
+    padding: 1rem; 
+    box-sizing: border-box; 
+    border: 2px solid rgb(0, 0, 0); 
+    text-align: center; 
+    color: rgb(40, 40, 40);
+    background-color: rgba(50, 50, 50, 0.409);
+    color: white;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+.dropdowninfo:hover {
+  background-color: #919191;
+}
+
+</style>
+<body style="background-color: rgb(30, 30, 30);">
+    <div id="box1">
+        <h1 class="style1">
+            <font color="#f5a447">Storage</font>
+            <font color="#48d41e">Utilities</font>
+        </h1>
+        <img src="./assets/storage-util.png" width="70" height="70">
+    </div>
+    <div style="height: 10;"></div>
+    <div class="centerdiv">
+        <div id="box2">
+            <div class="centerdiv">
+                <div class="darkenbox">
+                    <sub style="width: 500; font-size: 17;" class="style3">General Info</sub>
+                </div>
+            </div>
+            <sub class="style2" style="width: 500; font-size: 14;">Storage Utilities is an extension of most TMC focused addons like Canopy and Sapling. It’s purpose is to help aid in the development and testing process of storage tech related contraptions</sub>
+            <div style="height: 100;"></div>
+            <div class="centerdiv">
+            <div class="darkenboxCred">
+            <div class="centerdiv">
+            <div class="darkenbox">
+                <sub style="width: 500; font-size: 17;" class="style3">CREDIT</sub>
+            </div>
+            
+            <br>
+        </div>
+        <div style="height: 10;"></div>
+        <img src="./assets/d05d7cf1c4408f134d38f5b35b89ca7e.jpg" width="100" height="100">
+        <br>
+        <sub>
+            <font color="#a02824">Firebee</font>
+            <br>
+            <font color="#ffffff">Developer and data handling and original creator</font>
+        </sub>
+        <br>
+        <img src="./assets/bd274032015ec74f3d91e5d257cce2ed.png" width="100" height="100">
+        <br>
+        <sub>
+            <font color="#b804fc">Big Citrus Fruit</font>
+            <br>
+            <font color="#ffffff">data handling and original co-creator</font>
+        </sub>
+        <br>
+        <img src="./assets/1a47000ec919d6ed84586640a5967a4a.jpg" width="100" height="100">
+        <br>
+        <sub>
+            <font color="#208c34">Niptare</font>
+            <br>
+            <font color="#ffffff">Developer</font>
+        </sub>
+        </div>
+        </div>
+        <div style="height: 50;"></div>
+        <div class="centerdiv">
+            <div>
+                <div class="darkenbox">
+                    <sub style="width: 500; font-size: 17;" class="style3">How To use</sub>
+                </div>
+            </div>
+
+        </div>
+        <div style="height: 10;"></div>
+        <div class="centerdiv">
+        <div class="dropdowninfo" onclick="command()">
+            <sub class="style3" id="dd1">○ COMMANDS</sub>
+        </div>
+        <div class="dropdowninfo" onclick="rule()">
+            <sub class="style3" id="dd2">● RULES</sub>
+        </div>
+
+        </div>
+        <div style="height: 10;"></div>
+        <div class="centerdiv">
+        <div class="darkenboxCred">
+            <sub id="output" class="style3" style="font-size: 10;">./canopy StorageUtilities <br><br> <font color='#a3a3a3'>Needs to be true for Storage Utilities to function</font><br><br>./canopy creativeOnly <br><br> <font color='#a3a3a3'>Needs to be true for all specified creative only commands.</font></sub>
+        </div>
+        </div>
+        <h1 class="style1">Downloads</h1>
+        <sub class="style1">Canopy</sub><a href="https://github.com/Nipitare/Storage-Utilities/tree/canopy-main"> https://github.com/Nipitare/Storage-Utilities/tree/canopy-main</a><br>
+        <sub class="style1">Sapling</sub><a href="https://github.com/Nipitare/Storage-Utilities/tree/canopy-main"> https://github.com/Nipitare/Storage-Utilities/tree/canopy-main</a><br><br><br><br><br><a href="https://discord.gg/fA2E4xK28n"><img src="./assets/discord-logo.png" width="50" height="50"></a>
+        </div>
+        
+    </div>
+</body>
