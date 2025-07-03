@@ -1,169 +1,169 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-<script src="./script.js"></script>
-<style>
-.style1 {
-    font-family: "Roboto Mono", serif;
-    font-optical-sizing: auto;
-    font-weight: 1000;
-    font-style: normal;
-}
-.style2 {
-    font-family: "Rubik", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
-.style3 {
-    font-family: "Roboto Mono", serif;
-    font-optical-sizing: auto;
-    font-weight: 1000;
-    font-style: normal;
-}
-#box1 {
-    padding: 1rem; 
-    box-sizing: border-box; 
-    border: 2px solid rgb(0, 0, 0); 
-    text-align: center; 
-    color: rgb(40, 40, 40);
-    border-radius: 25px;
-    background-color: rgba(120, 119, 119, 0.409);
-}
-.centerdiv {
-    display: flex;
-    justify-content: center;
-}
-#box2 {
-    padding: 1rem; 
-    box-sizing: border-box; 
-    border: 2px solid rgb(0, 0, 0); 
-    text-align: center;
-    color: rgb(215, 215, 215);
-    width: 900;
-    background-color: rgba(120, 119, 119, 0.409);
-}
-.darkenbox {
-    width: 300;
-    padding: 1rem; 
-    box-sizing: border-box; 
-    border: 2px solid rgb(0, 0, 0); 
-    text-align: center; 
-    color: rgb(40, 40, 40);
-    background-color: rgba(23, 23, 23, 0.409);
-    color: white;
-}
-.darkenboxCred {
-    width: 500;
-    padding: 1rem; 
-    box-sizing: border-box; 
-    border: 2px solid rgb(0, 0, 0); 
-    text-align: center; 
-    color: rgb(40, 40, 40);
-    background-color: rgba(23, 23, 23, 0.409);
-    color: white;
-}
-.dropdowninfo {
-    width: 500;
-    height: 10;
-    padding: 1rem; 
-    box-sizing: border-box; 
-    border: 2px solid rgb(0, 0, 0); 
-    text-align: center; 
-    color: rgb(40, 40, 40);
-    background-color: rgba(50, 50, 50, 0.409);
-    color: white;
-    -webkit-user-select: none; 
-    -ms-user-select: none; 
-    user-select: none; 
-}
-.dropdowninfo:hover {
-  background-color: #919191;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Minecraft Portal & Area Map</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #111;
+      color: #ddd;
+      max-width: 950px;
+      margin: 20px auto;
+    }
+    form, .button-group {
+      margin-bottom: 10px;
+    }
+    label, input, button {
+      font-size: 14px;
+      margin: 2px;
+      vertical-align: middle;
+    }
+    input[type="number"], input[type="text"] {
+      width: 100px;
+      padding: 2px;
+    }
+    .portal-entry {
+      margin: 4px 0;
+    }
+    #plot {
+      width: 100%;
+      height: 600px;
+    }
+  </style>
+</head>
+<body>
 
-</style>
-<body style="background-color: rgb(30, 30, 30);">
-    <div id="box1">
-        <h1 class="style1">
-            <font color="#f5a447">Storage</font>
-            <font color="#48d41e">Utilities</font>
-        </h1>
-        <img src="./assets/storage-util.png" width="70" height="70">
-    </div>
-    <div style="height: 10;"></div>
-    <div class="centerdiv">
-        <div id="box2">
-            <div class="centerdiv">
-                <div class="darkenbox">
-                    <sub style="width: 500; font-size: 17;" class="style3">General Info</sub>
-                </div>
-            </div>
-            <sub class="style2" style="width: 500; font-size: 14;">Storage Utilities is an extension of most TMC focused addons like Canopy and Sapling. It’s purpose is to help aid in the development and testing process of storage tech related contraptions</sub>
-            <div style="height: 100;"></div>
-            <div class="centerdiv">
-            <div class="darkenboxCred">
-            <div class="centerdiv">
-            <div class="darkenbox">
-                <sub style="width: 500; font-size: 17;" class="style3">CREDIT</sub>
-            </div>
-            
-            <br>
-        </div>
-        <div style="height: 10;"></div>
-        <img src="./assets/d05d7cf1c4408f134d38f5b35b89ca7e.jpg" width="100" height="100">
-        <br>
-        <sub>
-            <font color="#a02824">Firebee</font>
-            <br>
-            <font color="#ffffff">Developer and data handling and original creator</font>
-        </sub>
-        <br>
-        <img src="./assets/bd274032015ec74f3d91e5d257cce2ed.png" width="100" height="100">
-        <br>
-        <sub>
-            <font color="#b804fc">Big Citrus Fruit</font>
-            <br>
-            <font color="#ffffff">data handling and original co-creator</font>
-        </sub>
-        <br>
-        <img src="./assets/1a47000ec919d6ed84586640a5967a4a.jpg" width="100" height="100">
-        <br>
-        <sub>
-            <font color="#208c34">Niptare</font>
-            <br>
-            <font color="#ffffff">Developer</font>
-        </sub>
-        </div>
-        </div>
-        <div style="height: 50;"></div>
-        <div class="centerdiv">
-            <div>
-                <div class="darkenbox">
-                    <sub style="width: 500; font-size: 17;" class="style3">How To use</sub>
-                </div>
-            </div>
+<h2>Minecraft Portal & Area Map</h2>
 
-        </div>
-        <div style="height: 10;"></div>
-        <div class="centerdiv">
-        <div class="dropdowninfo" onclick="command()">
-            <sub class="style3" id="dd1">○ COMMANDS</sub>
-        </div>
-        <div class="dropdowninfo" onclick="rule()">
-            <sub class="style3" id="dd2">● RULES!</sub>
-        </div>
+<form id="coordForm">
+  <label>X:</label><input type="number" id="x" required>
+  <label>Z:</label><input type="number" id="z" required>
+  <label>Label:</label><input type="text" id="label" placeholder="Enter label">
+  <button type="submit">Add Portal</button>
+</form>
 
-        </div>
-        <div style="height: 10;"></div>
-        <div class="centerdiv">
-        <div class="darkenboxCred">
-            <sub id="output" class="style3" style="font-size: 10;">./canopy StorageUtilities <br><br> <font color='#a3a3a3'>Needs to be true for Storage Utilities to function</font><br><br>./canopy creativeOnly <br><br> <font color='#a3a3a3'>Needs to be true for all specified creative only commands.</font></sub>
-        </div>
-        </div>
-        <h1 class="style1">Downloads</h1>
-        <sub class="style1">Canopy</sub><a href="https://github.com/Nipitare/Storage-Utilities/tree/canopy-main"> https://github.com/Nipitare/Storage-Utilities/tree/canopy-main</a><br>
-        <sub class="style1">Sapling</sub><a href="https://github.com/Nipitare/Storage-Utilities/tree/canopy-main"> https://github.com/Nipitare/Storage-Utilities/tree/canopy-main</a><br><br><br><br><br><a href="https://discord.gg/fA2E4xK28n"><img src="./assets/discord-logo.png" width="50" height="50"></a>
-        </div>
-        
-    </div>
+<form id="areaForm">
+  <label>X1:</label><input type="number" id="x1" required>
+  <label>Z1:</label><input type="number" id="z1" required><br>
+  <label>X2:</label><input type="number" id="x2" required>
+  <label>Z2:</label><input type="number" id="z2" required>
+  <label>Label:</label><input type="text" id="areaLabel" placeholder="Enter label">
+  <button type="submit">Add Area</button>
+</form>
+
+<div class="button-group">
+  <button onclick="clearAll()">Clear All</button>
+  <button onclick="downloadPNG()">Download PNG</button>
+</div>
+
+<div id="portalList"></div>
+<div id="plot"></div>
+
+<script>
+  let portals = [], areas = [];
+
+  const coordForm = document.getElementById("coordForm");
+  const areaForm = document.getElementById("areaForm");
+
+  coordForm.addEventListener("submit", e => {
+    e.preventDefault();
+    const x = +document.getElementById("x").value;
+    const z = +document.getElementById("z").value;
+    const label = document.getElementById("label").value.trim() || `Portal ${portals.length+1}`;
+    portals.push({ x, z, label, enabled: true });
+    coordForm.reset();
+    updateList(); updatePlot();
+  });
+
+  areaForm.addEventListener("submit", e => {
+    e.preventDefault();
+    const x1 = +document.getElementById("x1").value;
+    const z1 = +document.getElementById("z1").value;
+    const x2 = +document.getElementById("x2").value;
+    const z2 = +document.getElementById("z2").value;
+    const label = document.getElementById("areaLabel").value.trim() || `Area ${areas.length+1}`;
+    areas.push({ x1, z1, x2, z2, label, enabled: true });
+    areaForm.reset();
+    updateList(); updatePlot();
+  });
+
+  function updateList() {
+    const div = document.getElementById("portalList");
+    div.innerHTML = '';
+    portals.forEach((p,i) => div.innerHTML +=
+      `<div class="portal-entry">
+         <input type="checkbox" ${p.enabled?"checked":""} onchange="toggleP(${i})">
+         🟣 ${p.label} (${p.x},${p.z})
+       </div>`
+    );
+    areas.forEach((a,i) => div.innerHTML +=
+      `<div class="portal-entry">
+         <input type="checkbox" ${a.enabled?"checked":""} onchange="toggleA(${i})">
+         🟥 ${a.label} [(${a.x1},${a.z1})→(${a.x2},${a.z2})]
+       </div>`
+    );
+  }
+
+  function toggleP(i) { portals[i].enabled = !portals[i].enabled; updatePlot(); }
+  function toggleA(i) { areas[i].enabled = !areas[i].enabled; updatePlot(); }
+  function clearAll() { portals= []; areas= []; updateList(); updatePlot(); }
+
+  function downloadPNG(){
+    Plotly.downloadImage('plot', {
+      format:'png', filename:'minecraft_map',
+      height:600, width:900, scale:2
+    });
+  }
+
+  function calcDtick(range) {
+    const base = 16;
+    const exp = Math.floor(Math.log2(range / base));
+    return base * Math.pow(2, Math.max(exp,0));
+  }
+
+  function updatePlot(){
+    const data = [];
+    const ps = portals.filter(p => p.enabled);
+    if(ps.length){
+      data.push({
+        x: ps.map(p=>p.x), y: ps.map(p=>p.z),
+        text: ps.map(p=>`${p.label} (${p.x},${p.z})`),
+        mode: 'markers+text', textposition:'top center',
+        marker:{size:10,color:'magenta'}, type:'scatter', name:'Portals'
+      });
+    }
+    areas.filter(a=>a.enabled).forEach(a=>{
+      const xMin=Math.min(a.x1,a.x2), xMax=Math.max(a.x1,a.x2);
+      const zMin=Math.min(a.z1,a.z2), zMax=Math.max(a.z1,a.z2);
+      data.push({ x:[xMin,xMax,xMax,xMin,xMin], y:[zMin,zMin,zMax,zMax,zMin],
+        mode:'lines', line:{color:'red',width:2}, showlegend:false, type:'scatter'
+      });
+      data.push({ x:[(xMin+xMax)/2], y:[zMax],
+        text:[a.label], mode:'text', textposition:'bottom center',
+        textfont:{color:'red',size:14}, showlegend:false, type:'scatter'
+      });
+    });
+
+    const xs = [...ps.map(p=>p.x), ...areas.map(a=>a.x1).concat(areas.map(a=>a.x2))];
+    const zs = [...ps.map(p=>p.z), ...areas.map(a=>a.z1).concat(areas.map(a=>a.z2))];
+    const minX = Math.min(...xs,0)-32, maxX = Math.max(...xs,0)+32;
+    const minZ = Math.min(...zs,0)-32, maxZ = Math.max(...zs,0)+32;
+    const xrange = maxX - minX, zrange = maxZ - minZ;
+    const dt = calcDtick(Math.max(xrange,zrange));
+
+    Plotly.newPlot('plot', data, {
+      paper_bgcolor:'#111', plot_bgcolor:'#111', font:{color:'#ddd'},
+      xaxis:{title:'X', showgrid:true, gridcolor:'#333', dtick:dt, range:[minX,maxX]},
+      yaxis:{title:'Z', showgrid:true, gridcolor:'#333', dtick:dt, scaleanchor:'x', scaleratio:1, range:[minZ,maxZ]},
+      dragmode:false,
+      modebar:{remove:['zoom2d','lasso2d','select2d','zoomIn2d','zoomOut2d'], orientation:'v'}
+    }, {responsive:true});
+  }
+
+  updateList(); updatePlot();
+</script>
+
 </body>
+</html>
